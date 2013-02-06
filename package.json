@@ -1,0 +1,26 @@
+{
+  "name": "AssetManager",
+  "version": "0.1.0",
+  "description": "AssetManager JS is a robust JavaScript asset manager for images.",
+  "homepage": "http://github.com/ain/assetmanager-js",
+  "author": {
+    "name": "Ain Tohvri",
+    "email": "ain@flashbit.net"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-jshint": "~0.1.0",
+    "grunt-contrib-nodeunit": "~0.1.0",
+    "grunt-contrib-qunit": "~0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ain/assetmanager-js"
+  },
+  "licenses": [
+    {
+      "type": "GPL",
+      "url": "https://github.com/ain/assetmanager-js/blob/master//LICENSE-GPL"
+    }
+  ]
+}
