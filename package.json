@@ -22,5 +22,8 @@
       "type": "GPL",
       "url": "https://github.com/ain/assetmanager-js/blob/master//LICENSE-GPL"
     }
-  ]
+  ],
+  "scripts": {
+    "test": "grunt travis --verbose"
+  }
 }
