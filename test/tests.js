@@ -1,17 +1,20 @@
 var assetManager = new AssetManager();
 
 test('add to queue', function() {
-  ok(assetManager.add('gpl3_64', 'img/gpl3_64.png'), 'gpl3_64 queued');
-  ok(assetManager.add('gpl3_128', 'img/gpl3_128.png'), 'gpl3_128 queued');
-  ok(assetManager.add('gpl3_256', 'img/gpl3_256.png'), 'gpl3_256 queued');
+  ok(assetManager.add('gpl3_64', 'img/gpl3_64.png'), 'queued gpl3_64');
+  ok(assetManager.add('gpl3_128', 'img/gpl3_128.png'), 'queued gpl3_128');
+  ok(assetManager.add('gpl3_256', 'img/gpl3_256.png'), 'queued gpl3_256');
 });
 
-test('download', function() {
-  // TODO implement
-  ok(true, 'implementation missing')
+asyncTest("download all assets", 1, function() {
+  assetManager.downloadAll(function() {
+    ok(true, 'all assets downloaded');
+    start();
+  });
 });
 
 test('get asset', function() {
-  // TODO implement
-  ok(true, 'implementation missing')
+  ok(assetManager.getAsset('gpl3_64'), 'got asset gpl3_64')
+  ok(assetManager.getAsset('gpl3_128'), 'got asset gpl3_128')
+  ok(assetManager.getAsset('gpl3_256'), 'got asset gpl3_256')
 });
