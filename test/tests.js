@@ -1,9 +1,9 @@
 var assetManager = new AssetManager();
 
 test('add to queue', function() {
-  ok(assetManager.add('gpl3_64', 'img/gpl3_64.png'), 'queued gpl3_64');
-  ok(assetManager.add('gpl3_128', 'img/gpl3_128.png'), 'queued gpl3_128');
-  ok(assetManager.add('gpl3_256', 'img/gpl3_256.png'), 'queued gpl3_256');
+  ok(assetManager.add('gpl3_64', 'https://raw.github.com/ain/assetmanager-js/master/test/img/gpl3_64.png'), 'queued gpl3_64');
+  ok(assetManager.add('gpl3_128', 'https://raw.github.com/ain/assetmanager-js/master/test/img/gpl3_128.png'), 'queued gpl3_128');
+  ok(assetManager.add('gpl3_256', 'https://raw.github.com/ain/assetmanager-js/master/test/img/gpl3_256.png'), 'queued gpl3_256');
 });
 
 asyncTest("download all assets", 1, function() {
