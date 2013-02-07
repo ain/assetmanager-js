@@ -1,4 +1,4 @@
-/*! AssetManager - v0.1.0 - 2013-02-06
+/*! AssetManager - v0.1.0 - 2013-02-07
 * http://github.com/ain/assetmanager-js
 * Copyright (c) 2013 Ain Tohvri; Licensed GPL */
 
@@ -35,6 +35,6 @@ AssetManager.prototype.handleImageLoadError = function() {
 AssetManager.prototype.isDone = function() {
   return this.queue.length === this.successCount + this.failCount;
 };
-AssetManager.prototype.getAsset = function(id) {
+AssetManager.prototype.get = function(id) {
   return this.cache[id];
 };

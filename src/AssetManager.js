@@ -31,6 +31,6 @@ AssetManager.prototype.handleImageLoadError = function() {
 AssetManager.prototype.isDone = function() {
   return this.queue.length === this.successCount + this.failCount;
 };
-AssetManager.prototype.getAsset = function(id) {
+AssetManager.prototype.get = function(id) {
   return this.cache[id];
 };

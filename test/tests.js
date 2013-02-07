@@ -14,13 +14,13 @@ asyncTest("download all assets", 1, function() {
 });
 
 test('get asset', function() {
-  ok(assetManager.getAsset('gpl3_64'), 'got asset gpl3_64')
-  ok(assetManager.getAsset('gpl3_128'), 'got asset gpl3_128')
-  ok(assetManager.getAsset('gpl3_256'), 'got asset gpl3_256')
+  ok(assetManager.get('gpl3_64'), 'got asset gpl3_64')
+  ok(assetManager.get('gpl3_128'), 'got asset gpl3_128')
+  ok(assetManager.get('gpl3_256'), 'got asset gpl3_256')
 });
 
 test('asset type check', function() {
-  ok(assetManager.getAsset('gpl3_64') instanceof Image, 'gpl3_64 is Image')
-  ok(assetManager.getAsset('gpl3_128') instanceof Image, 'gpl3_128 is Image')
-  ok(assetManager.getAsset('gpl3_256') instanceof Image, 'gpl3_256 is Image')
+  ok(assetManager.get('gpl3_64') instanceof Image, 'gpl3_64 is Image')
+  ok(assetManager.get('gpl3_128') instanceof Image, 'gpl3_128 is Image')
+  ok(assetManager.get('gpl3_256') instanceof Image, 'gpl3_256 is Image')
 });
