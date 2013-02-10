@@ -32,7 +32,7 @@ var firstAssetObject = assetManager.get('firstAssetId');
 ```
 
 ## Example
-Coming soon.
+See _example/index.html_.
 
 ## License
 AssetManager JS is a robust JavaScript asset manager for images.
