@@ -30,6 +30,12 @@ module.exports = function(grunt) {
         dest: 'dist/<%= pkg.name %>.min.js'
       }
     },
+    copy: {
+      example: {
+        src: ['dist/<%= pkg.name %>.min.js'],
+        dest: 'example/<%= pkg.name %>.min.js'
+      }
+    },
     watch: {
       files: '<config:lint.files>',
       tasks: 'lint qunit'
@@ -53,8 +59,11 @@ module.exports = function(grunt) {
     uglify: {}
   });
 
+  // Load contrib tasks.
+  grunt.loadNpmTasks('grunt-contrib-copy');
+
   // Default task.
-  grunt.registerTask('default', 'lint qunit concat min');
+  grunt.registerTask('default', 'lint qunit concat min copy');
 
   // Travis CI task
   grunt.registerTask('travis', 'lint qunit');

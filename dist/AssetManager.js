@@ -1,4 +1,4 @@
-/*! AssetManager - v0.1.0 - 2013-02-07
+/*! AssetManager - v0.1.0 - 2013-02-10
 * http://github.com/ain/assetmanager-js
 * Copyright (c) 2013 Ain Tohvri; Licensed GPL */
 
