@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AssetManager JS example</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="AssetManager.min.js"></script>
+        <script type="text/javascript">
+            var assetManager = new AssetManager();
+            function load() {
+                // add selected icons to the queue
+                if (document.getElementById('box1').checked) {
+                    assetManager.add('icon1', 'img/gpl3_64.png');
+                }
+                if (document.getElementById('box2').checked) {
+                    assetManager.add('icon2', 'img/gpl3_128.png');
+                }
+                if (document.getElementById('box3').checked) {
+                    assetManager.add('icon3', 'img/gpl3_256.png');
+                }
+                // download all selected icons
+                assetManager.downloadAll(function() {
+                    document.getElementById('btn-display').disabled = false;
+                });
+            }
+            function display() {
+                var container = document.getElementById('icons');
+                // add all selected icons to DOM
+                if (document.getElementById('box1').checked) {
+                    container.appendChild(assetManager.get('icon1'));
+                }
+                if (document.getElementById('box2').checked) {
+                    container.appendChild(assetManager.get('icon2'));
+                }
+                if (document.getElementById('box3').checked) {
+                    container.appendChild(assetManager.get('icon3'));
+                }
+           }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>AssetManager JS example</h1>
+            <p>This example can load and display 3 different icons.</p>
+        </header>
+        <article>
+            <p id="icons"></p>
+            <p>
+                <label><input type="checkbox" id="box1" checked>1st icon</label>
+                <label><input type="checkbox" id="box2">2nd icon</label>
+                <label><input type="checkbox" id="box3">3rd icon</label>
+                <button onclick="load()">Load</button>
+                <button onclick="display()" disabled="disabled" id="btn-display">Display</button>
+            </p>
+        </article>
+        <footer>
+            Copyright © 2013 Ain Tohvri. Released under GPLv3, see
+            <a href="http://github.com/ain/assetmanager-js" title="AssetManager JS">http://github.com/ain/assetmanager-js</a>.
+        </footer>
+    </body>
+</html>
