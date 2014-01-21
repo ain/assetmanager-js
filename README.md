@@ -8,26 +8,26 @@ For example it can be used to quickly preload a set of images for your HTML5 pro
 None.
 
 ## Installation
-1. Download a 1KB _dist/Assetmanager.min.js_
+1. Download a 1KB _[dist/Assetmanager.min.js](https://github.com/ain/assetmanager-js/raw/master/dist/AssetManager.min.js)_
 2. Include it in your website or application
 
 ## Usage
 Initialize:
-```
+```javascript
 var assetManager = new AssetManager();
 ```
 Queue assets:
-```
+```javascript
 assetManager.add('firstAssetId', 'path/to/asset1.file');
 assetManager.add('secondAssetId', 'path/to/asset2.file');
 ```
 Download all assets:
-```
+```javascript
 // callbackFunction will be called once all assets have been downloaded
 assetManager.downloadAll(callbackFunction);
 ```
 Retrieve asset:
-```
+```javascript
 var firstAssetObject = assetManager.get('firstAssetId');
 ```
 
