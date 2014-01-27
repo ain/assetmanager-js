@@ -1,4 +1,4 @@
-AssetManager JS [![Build Status](https://travis-ci.org/ain/assetmanager-js.png?branch=master)](https://travis-ci.org/ain/assetmanager-js)
+AssetManager JS [![Build Status](https://travis-ci.org/ain/assetmanager-js.png?branch=master)](https://travis-ci.org/ain/assetmanager-js) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 ===============
 
 AssetManager JS is a robust and lightweight JavaScript asset manager for images.
