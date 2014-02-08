@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         '<%= pkg.author.name %>; Licensed <%= pkg.licenses[0].type %> */'
     },
     qunit: {
-      files: ['test/**/*.html']
+      files: ['./test/**/*.html']
     },
     concat: {
       options: {
