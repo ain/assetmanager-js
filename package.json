@@ -7,6 +7,15 @@
     "name": "Ain Tohvri",
     "email": "ain@flashbit.net"
   },
+  "contributors": [
+    {
+      "name": "Ain Tohvri",
+      "email": "ain@flashbit.net"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/ain/assetmanager-js/issues"
+  },
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.2",
@@ -31,6 +40,15 @@
     "test": "grunt travis --verbose"
   },
   "engines": {
-    "node": ">= 0.9.0"
-  }
+    "node": ">= 0.10.0"
+  },
+  "keywords": [
+    "asset",
+    "html5",
+    "image",
+    "canvas",
+    "load",
+    "preload"
+  ]
 }
+
