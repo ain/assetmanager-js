@@ -4,11 +4,12 @@ AssetManager JS [![Build Status](https://travis-ci.org/ain/assetmanager-js.png?b
 AssetManager JS is a robust and lightweight JavaScript asset manager for images.
 For example it can be used to quickly preload a set of images for your HTML5 project.
 
-## Requirements
-None.
-
 ## Installation
-1. Download a 1KB _[dist/Assetmanager.min.js](https://github.com/ain/assetmanager-js/raw/master/dist/AssetManager.min.js)_
+### Bower
+1. `bower install assetmanager-js`
+2. Include AssetManager.min.js in your website or application from the bower installation folder
+### Manual
+1. Download a 1KB [Assetmanager.min.js](https://github.com/ain/assetmanager-js/raw/master/dist/AssetManager.min.js)
 2. Include it in your website or application
 
 ## Usage
