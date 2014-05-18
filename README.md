@@ -1,4 +1,5 @@
-AssetManager JS [![Build Status](https://travis-ci.org/ain/assetmanager-js.png?branch=master)](https://travis-ci.org/ain/assetmanager-js) [![Bower version](https://badge.fury.io/bo/assetmanager-js.png)](http://badge.fury.io/bo/assetmanager-js) [![Dependency Status](https://david-dm.org/ain/assetmanager-js.png)](https://david-dm.org/ain/assetmanager-js) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+AssetManager JS  [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+[![Build Status](http://img.shields.io/travis/ain/assetmanager-js.svg)](https://travis-ci.org/ain/assetmanager-js) [![Bower version](https://badge.fury.io/bo/assetmanager-js.png)](http://badge.fury.io/bo/assetmanager-js) [![Dependency Status](https://david-dm.org/ain/assetmanager-js.png)](https://david-dm.org/ain/assetmanager-js)
 ===============
 
 AssetManager JS is a robust and lightweight JavaScript asset manager for images.
