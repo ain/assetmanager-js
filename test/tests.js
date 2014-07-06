@@ -1,3 +1,5 @@
+'use strict';
+
 var AssetManager;
 var test;
 var asyncTest;
@@ -11,7 +13,7 @@ test('add to queue', function() {
   ok(assetManager.add('gpl3_256', 'https://raw.github.com/ain/assetmanager-js/master/test/img/gpl3_256.png'), 'queued gpl3_256');
 });
 
-asyncTest("download all assets", 1, function() {
+asyncTest('download all assets', 1, function() {
   assetManager.downloadAll(function() {
     ok(true, 'all assets downloaded');
     start();
